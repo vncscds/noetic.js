@@ -1,0 +1,71 @@
+{
+  "$schema": "https://biomejs.dev/schemas/2.2.4/schema.json",
+  "assist": { "actions": { "source": { "organizeImports": "on" } } },
+  "linter": {
+    "enabled": true,
+    "rules": {
+      "recommended": true,
+      "a11y": {
+        "noSvgWithoutTitle": "off"
+      },
+      "style": {
+        "noNonNullAssertion": "warn",
+        "noExportedImports": "error"
+      },
+      "suspicious": {
+        "noExplicitAny": "warn",
+        "noRedeclare": "off",
+        "noConfusingVoidType": "off"
+      },
+      "security": {
+        "noDangerouslySetInnerHtml": "off"
+      },
+      "complexity": {
+        "noForEach": "off",
+        "noBannedTypes": "off"
+      },
+      "correctness": {
+        "noUnsafeOptionalChaining": "off",
+        "noUnusedImports": "warn"
+      },
+      "nursery": {}
+    }
+  },
+  "vcs": {
+    "useIgnoreFile": true
+  },
+  "files": {
+    "includes": [
+      "**",
+      "!**/*.js",
+      "!**/*.cjs",
+      "!**/tsconfig.*.json",
+      "!**/ios",
+      "!**/*.js",
+      "!**/.vscode",
+      "!app/main.tsx"
+    ]
+  },
+  "formatter": {
+    "enabled": true,
+    "formatWithErrors": true,
+    "indentStyle": "space",
+    "indentWidth": 2
+  },
+  "json": {
+    "parser": {
+      "allowComments": true
+    }
+  },
+  "javascript": {
+    "formatter": {
+      "enabled": true,
+      "quoteStyle": "single",
+      "jsxQuoteStyle": "double",
+      "semicolons": "always",
+      "arrowParentheses": "always",
+      "indentWidth": 2,
+      "indentStyle": "space"
+    }
+  }
+}
