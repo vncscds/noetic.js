@@ -1,8 +1,10 @@
+
+export * from './object';
+
 /**
   * @Storage
   * Init noetic storage
   */
-import './storage';
 import { getStorage } from './storage';
 import { TCollection } from './storage/@types';
 
