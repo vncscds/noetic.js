@@ -1,0 +1,12 @@
+export type TagTypes =
+  | 'function'
+  | 'object'
+  | 'map'
+  | 'promise'
+  | 'number'
+  | 'symbol'
+  | 'string'
+  | 'boolean'
+  | 'bigint'
+  | 'undefined'
+  | 'null'

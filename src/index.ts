@@ -6,7 +6,7 @@ export * from './object';
   * Init noetic storage
   */
 import { getStorage } from './storage';
-import { TCollection } from './storage/@types';
+import type { TCollection } from './storage/@types';
 
 type Movie = {
   id: string;
@@ -30,7 +30,6 @@ const collections: Array<TCollection<Movie, 'movies'>> = [
 
 // init example
 const coll = getStorage(collections).collection('movies')
-
 
 // access to coll manipulation methods
 coll.find
