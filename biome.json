@@ -13,7 +13,7 @@
         "noExportedImports": "error"
       },
       "suspicious": {
-        "noExplicitAny": "warn",
+        "noExplicitAny": "info",
         "noRedeclare": "off",
         "noConfusingVoidType": "off"
       },
