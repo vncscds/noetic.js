@@ -18,6 +18,6 @@ const textEncoder = new TextEncoder()
  * // Returns: Uint8Array(4) [240, 159, 152, 128]
  * ```
  */
-export default function encode(data: string): Uint8Array {
+export function encode(data: string): Uint8Array {
   return textEncoder.encode(data)
 }

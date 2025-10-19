@@ -28,6 +28,6 @@ const textDecoder = new TextDecoder();
  * @throws {TypeError} If the buffer is not a valid BufferSource
  * @throws {TypeError} If the buffer contains invalid UTF-8 sequences
  */
-export default function decode(buffer: AllowSharedBufferSource, options?: TextDecodeOptions): string {
+export function decode(buffer: AllowSharedBufferSource, options?: TextDecodeOptions): string {
   return textDecoder.decode(buffer, options)
 }

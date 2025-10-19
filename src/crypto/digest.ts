@@ -1,6 +1,6 @@
 const DIGEST_ALGORITHM = 'SHA-256'
 
-export default async function digest(input: string): Promise<string> {
+export async function digest(input: string): Promise<string> {
   const msgBuffer = new TextEncoder().encode(input)
   const digestedData = await crypto.subtle.digest(DIGEST_ALGORITHM, msgBuffer)
   const hashView = new Uint8Array(digestedData)
