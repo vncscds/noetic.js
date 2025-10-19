@@ -18,7 +18,7 @@ describe('digest', () => {
   })
 
   it('should be deterministic', async () => {
-    const [digested1, digest2] = [await digest('Hello World'), await digest('Hello World')]
+    const [digested1, digest2] = await Promise.all([digest('Hello World'), digest('Hello World')])
     expect(digest2).toBe(digested1)
   })
 })
