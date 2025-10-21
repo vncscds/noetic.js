@@ -13,41 +13,6 @@
         <h1>Noetic is running now!</h1>
         <p style="color: #8f8f8f">Try it out</p>
       </hgroup>
-      <code>
-        <pre>
-          const storage = getStorage()
-          const coll = storage.collection('movies')
-
-          const collections: Array<TCollection<Movie, 'movies'>> = [
-          {
-            schema: 'movies',
-            documents: [
-                {
-                  id: 'rio',
-                  name: 'Rio',
-                  rent_price: 9.99
-                }
-              ]
-            }
-          ]
-
-          const res = coll.find('id', 'rio')
-
-          // {
-          //  id: 'rio',
-          //  name: 'Rio',
-          //  rent_price: 9.99
-          // }
-
-          coll.findAsync('id', 'rio').then(rio => console.log(rio))
-
-          // {
-          //  id: 'rio',
-          //  name: 'Rio',
-          //  rent_price: 9.99
-          // }
-        </pre>
-      </code>
     </div>
     <script type="module" src="/src/index.ts"></script>
   </body>
