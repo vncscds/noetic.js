@@ -1,4 +1,5 @@
 export type TagTypes =
+  | 'array'
   | 'function'
   | 'object'
   | 'map'
@@ -10,3 +11,4 @@ export type TagTypes =
   | 'bigint'
   | 'undefined'
   | 'null'
+  | 'nan'
