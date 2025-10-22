@@ -15,7 +15,8 @@
       "suspicious": {
         "noExplicitAny": "info",
         "noRedeclare": "off",
-        "noConfusingVoidType": "off"
+        "noConfusingVoidType": "off",
+        "noDoubleEquals": "info"
       },
       "security": {
         "noDangerouslySetInnerHtml": "off"
