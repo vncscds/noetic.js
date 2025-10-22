@@ -151,8 +151,6 @@ export function idb({ storage = DEFAULT_STORAGE_NAME, idbVersion = DEFAULT_IDB_V
     })
   }
 
-  const $update =
-
   return {
     __db: $idb,
     __name: storage,
